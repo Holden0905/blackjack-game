@@ -1,6 +1,6 @@
 let player = {
-    name: "Per",
-    chips: 200,
+    name: "Brian",
+    chips: 100,
     sayHello: function() {
         console.log("Heisann!")
     }
@@ -48,10 +48,10 @@ function renderGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
-        message = "You've got Blackjack!"
+        message = "Blackjack My Dude!"
         hasBlackJack = true
     } else {
-        message = "You're out of the game!"
+        message = "Sorry Bro, the house always wins!"
         isAlive = false
     }
     messageEl.textContent = message
